@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Furniture Making & Repair | Jaipur</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#24211e;background:#faf8f4;line-height:1.5}
+header{background:#241b16;color:white;padding:28px 18px;text-align:center}header h1{margin:0;font-size:30px;letter-spacing:1px}header p{margin:8px 0 0;color:#e8d8c8}
+nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:13px;background:#3a2b22}nav a{color:white;text-decoration:none;font-size:14px}
+.hero{padding:48px 20px;text-align:center;background:linear-gradient(135deg,#efe2d2,#faf8f4)}.hero h2{font-size:29px;margin:0 0 10px}.hero p{max-width:620px;margin:0 auto 20px}
+.btn{display:inline-block;background:#8a4e2d;color:white;padding:12px 19px;border-radius:7px;text-decoration:none;border:0;font-size:16px}
+section{padding:30px 18px;max-width:900px;margin:auto}h2{text-align:center}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 12px #0000000d}.card h3{margin-top:0}
+form{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 12px #0000000d;max-width:620px;margin:auto}
+label{display:block;margin:12px 0 5px;font-weight:bold}input,select,textarea{width:100%;padding:11px;border:1px solid #d7cec5;border-radius:6px;font:inherit}textarea{min-height:90px}
+small{color:#655b53}footer{text-align:center;background:#241b16;color:white;padding:22px}
+</style>
+</head>
+<body>
+<header><h1>FURNITURE MAKING & REPAIR</h1><p>Custom Furniture • New Designs • Repair Services</p></header>
+<nav><a href="#services">Services</a><a href="#booking">Book Service</a><a href="#contact">Contact</a></nav>
+<div class="hero"><h2>आपके घर के लिए बेहतर फर्नीचर</h2><p>अलमारी, बेड, TV पैनल और कस्टम फर्नीचर बनवाएँ। पुराने फर्नीचर की रिपेयरिंग के लिए भी संपर्क करें।</p><a class="btn" href="#booking">बुकिंग करें</a></div>
+<section id="services"><h2>हमारी सेवाएँ</h2><div class="cards">
+<div class="card"><h3>नया फर्नीचर</h3><p>अलमारी, बेड, TV यूनिट और घर के लिए कस्टम डिज़ाइन।</p></div>
+<div class="card"><h3>फर्नीचर रिपेयर</h3><p>पुरानी अलमारी, बेड और दूसरे फर्नीचर की मरम्मत।</p></div>
+<div class="card"><h3>कस्टम डिज़ाइन</h3><p>आपकी जगह और जरूरत के हिसाब से काम।</p></div>
+</div></section>
+<section id="booking"><h2>बुकिंग / कीमत पूछें</h2><form id="bookingForm">
+<label>आपका नाम</label><input id="name" required placeholder="नाम लिखें">
+<label>मोबाइल नंबर</label><input id="phone" required inputmode="tel" placeholder="मोबाइल नंबर">
+<label>किस काम के लिए संपर्क कर रहे हैं?</label><select id="work"><option>नया फर्नीचर बनवाना है</option><option>फर्नीचर रिपेयर करवाना है</option><option>कस्टम डिज़ाइन / कीमत पूछनी है</option></select>
+<label>इलाका / पूरा पता</label><input id="area" required placeholder="जैसे मालवीय नगर, जयपुर">
+<label>काम की जानकारी</label><textarea id="details" placeholder="क्या बनवाना या रिपेयर करवाना है?"></textarea>
+<label>फोटो (वैकल्पिक)</label><input id="photo" type="file" accept="image/*"><small>फोटो चुनने के बाद WhatsApp खुलेगा। वहाँ फोटो अलग से अटैच करके भेज सकते हैं।</small>
+<p><button class="btn" type="submit">WhatsApp पर बुकिंग भेजें</button></p>
+</form></section>
+<section id="contact"><h2>संपर्क करें</h2><p style="text-align:center">जयपुर और आसपास के क्षेत्रों में सेवा।</p><p style="text-align:center"><a class="btn" href="https://wa.me/916378837457">WhatsApp: 6378837457</a></p></section>
+<footer>Furniture Making • Custom Design • Repair Services<br>Jaipur, Rajasthan</footer>
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=`नमस्ते, मुझे फर्नीचर के काम के लिए बुकिंग करनी है।%0Aनाम: ${encodeURIComponent(v('name'))}%0Aमोबाइल: ${encodeURIComponent(v('phone'))}%0Aकाम: ${encodeURIComponent(v('work'))}%0Aइलाका/पता: ${encodeURIComponent(v('area'))}%0Aजानकारी: ${encodeURIComponent(v('details'))}%0Aफोटो: यदि चुनी है तो मैं WhatsApp चैट में अटैच करूँगा।`;
+ window.location.href='https://wa.me/916378837457?text='+msg;
+});
+</script>
+</body></html>
