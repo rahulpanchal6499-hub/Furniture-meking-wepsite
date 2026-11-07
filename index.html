@@ -123,4 +123,346 @@ padding:13px 23px;
 background:var(--gold);
 color:#17231f;
 text-decoration:none;
-border-radius
+border-radius:5px;
+font-weight:bold;
+margin:5px;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* Sections */
+section{
+padding:60px 5%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.section-title h2{
+font-size:32px;
+color:var(--green);
+}
+
+.section-title p{
+color:#777;
+}
+
+/* Services */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.service-card{
+background:white;
+padding:25px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 4px 15px #0001;
+}
+
+.service-card .icon{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.service-card h3{
+color:var(--green);
+margin-bottom:10px;
+}
+
+.service-card p{
+color:#666;
+}
+
+/* Gallery */
+.gallery{
+background:white;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+}
+
+.gallery-card{
+border-radius:10px;
+overflow:hidden;
+background:#eee;
+}
+
+.gallery-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+display:block;
+}
+
+.gallery-card h3{
+padding:12px;
+text-align:center;
+color:var(--green);
+}
+
+/* About */
+.about{
+text-align:center;
+background:#eeeae0;
+}
+
+.about p{
+max-width:800px;
+margin:auto;
+font-size:17px;
+}
+
+/* Contact */
+.contact{
+background:var(--dark);
+color:white;
+text-align:center;
+}
+
+.contact h2{
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* Footer */
+footer{
+background:#101915;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:16px;
+background:#25d366;
+color:white;
+padding:13px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+z-index:100;
+box-shadow:0 3px 10px #0004;
+}
+
+@media(max-width:600px){
+header{
+justify-content:center;
+gap:15px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero{
+min-height:400px;
+}
+
+nav{
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME MESSAGE -->
+<div class="welcome">
+<span>
+WELCOME TO PREMIUM FURNITURE WORKS
+★ आपका हार्दिक स्वागत है ★
+BEST FURNITURE DESIGNS ★ QUALITY WORK ★
+</span>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="logo">Premium Furniture Works</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div class="hero-content">
+
+<h1>Beautiful <span>Furniture</span>
+For Your Home</h1>
+
+<p>
+Modular Kitchen, Sofa Making, TV Panels,
+Wardrobes and Custom Furniture.
+Beautiful Designs and Quality Craftsmanship.
+</p>
+
+<a class="btn" href="#services">Our Services</a>
+
+<a class="btn"
+href="https://wa.me/916378837457?text=Hello%20I%20want%20furniture%20service">
+WhatsApp Now
+</a>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+
+<div class="section-title">
+<h2>Our Services</h2>
+<p>हम आपके घर को बनाते हैं खूबसूरत</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="icon">🍽️</div>
+<h3>Modular Kitchen</h3>
+<p>Modern modular kitchen designs and custom kitchen work.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🛋️</div>
+<h3>Sofa Making</h3>
+<p>Beautiful custom sofa designs and sofa repair services.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">📺</div>
+<h3>TV Panel</h3>
+<p>Modern TV units and attractive wall panel designs.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🚪</div>
+<h3>Almirah & Wardrobe</h3>
+<p>Custom wardrobes and stylish storage solutions.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🛏️</div>
+<h3>Bed Making</h3>
+<p>Custom beds with beautiful designs and finishing.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🔨</div>
+<h3>Furniture Repair</h3>
+<p>Furniture repairing and home furniture improvement.</p>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+<div class="section-title">
+<h2>Our Furniture Gallery</h2>
+<p>Explore Our Modern Designs</p>
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700"
+alt="Modern Interior">
+<h3>Modern Interior</h3>
+</div>
+
+<div class="gallery-card">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700"
+alt="Living Room">
+<h3>Living Room</h3>
+</div>
+
+<div class="gallery-card">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=700"
+alt="Home Furniture">
+<h3>Home Furniture</h3>
+</div>
+
+<div class="gallery-card">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700"
+alt="Kitchen Interior">
+<h3>Kitchen Designs</h3>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<div class="section-title">
+<h2>About Us</h2>
+</div>
+
+<p>
+Welcome to Premium Furniture Works.
+We provide custom furniture making,
+modern interior furniture, modular kitchen,
+TV panels, wardrobes, sofa making and
+furniture repair services.
+Our focus is quality work, beautiful designs
+and customer satisfaction.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Durgapura, Jaipur, Rajasthan</p>
+
+<p>📍 Malviya Nagar | Jagatpura | Jhalana</p>
+
+<p>📞 WhatsApp: +91 6378837457</p>
+
+<p>🏠 Home Service Available</p>
+
+<a class="btn"
+href="https://wa.me/916378837457?text=Hello%20I%20want%20furniture%20service">
+Contact on WhatsApp
+</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Premium Furniture Works</p>
+<p>Designed with Quality & Creativity</p>
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/916378837457?text=Hello%20I%20want%20furniture%20service">
+WhatsApp
+</a>
+
+</body>
+</html>
