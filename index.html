@@ -1,73 +1,82 @@
-
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Premium Furniture Works | Jaipur</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
 :root{--dark:#17231f;--green:#244b3c;--gold:#d6ad68;--cream:#f7f4ed}
 body{font-family:Arial,sans-serif;background:var(--cream);color:#252525;line-height:1.6}
-header{background:var(--dark);color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.logo{font-size:22px;font-weight:bold;color:var(--gold)}
-nav{display:flex;gap:18px;flex-wrap:wrap}
+header{background:var(--dark);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:21px;font-weight:bold;color:var(--gold)}
+nav{display:flex;gap:15px;flex-wrap:wrap}
 nav a{color:white;text-decoration:none;font-size:14px}
 nav a:hover{color:var(--gold)}
-.hero{min-height:520px;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(90deg,rgba(12,22,18,.92),rgba(12,22,18,.48)),url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85");background-size:cover;background-position:center;color:white}
+.hero{min-height:500px;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(90deg,#101b17ed,#101b1760),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85') center/cover;color:white}
 .hero-content{max-width:650px}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin-bottom:20px}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.15;margin-bottom:20px}
 .hero h1 span{color:var(--gold)}
-.hero p{font-size:17px;margin-bottom:28px;color:#eee}
-.btn{display:inline-block;border:0;border-radius:5px;padding:13px 22px;background:var(--gold);color:#17231f;font-weight:bold;text-decoration:none;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-2px);background:#e8c78e}
-section{padding:70px 7%}
+.hero p{font-size:17px;margin-bottom:25px}
+.btn{display:inline-block;padding:13px 22px;background:var(--gold);color:#17231f;text-decoration:none;border:0;border-radius:5px;font-weight:bold;cursor:pointer}
+.btn:hover{background:#edcc91}
+section{padding:65px 6%}
 .section-title{text-align:center;margin-bottom:35px}
-.section-title h2{font-size:32px;color:var(--green);margin-bottom:8px}
-.section-title p{color:#666}
-.services-grid,.pricing-grid,.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.service-card,.price-card{background:white;border-radius:10px;padding:25px;box-shadow:0 5px 20px rgba(0,0,0,.07);text-align:center}
-.service-card h3,.price-card h3{color:var(--green);margin-bottom:12px}
-.service-card p,.price-card p{color:#666;margin-bottom:20px;font-size:14px}
-.service-icon{font-size:38px;margin-bottom:12px}
-.why{background:#eae8df;text-align:center}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-.why-item{padding:22px;background:white;border-radius:9px}
-.why-item h3{color:var(--green);margin-bottom:8px}
-.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:9px}
+.section-title h2{font-size:32px;color:var(--green)}
+.section-title p{color:#777;margin-top:7px}
+.services-grid,.pricing-grid,.gallery-grid,.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.service-card,.price-card,.feature{background:white;border-radius:10px;padding:23px;text-align:center;box-shadow:0 5px 18px #0000000c}
+.service-icon{font-size:40px;margin-bottom:10px}
+.service-card h3,.price-card h3{color:var(--green);margin-bottom:10px}
+.service-card p,.price-card p{color:#777;font-size:14px;margin-bottom:18px}
+.why{background:#eae8df}
+.feature h3{color:var(--green);margin-bottom:8px}
+.gallery-section{background:#fff}
+.filter-buttons{text-align:center;margin-bottom:25px}
+.filter-buttons button{margin:5px;padding:10px 17px;border:1px solid var(--gold);border-radius:25px;background:white;cursor:pointer}
+.filter-buttons button.active{background:var(--green);color:white}
+.gallery-card{background:#f8f6f0;border-radius:10px;overflow:hidden;box-shadow:0 5px 18px #00000012}
+.gallery-card img{width:100%;height:230px;object-fit:cover;cursor:pointer;display:block}
+.gallery-info{padding:15px;text-align:center}
+.gallery-info h3{color:var(--green);margin-bottom:8px}
+.gallery-info a{display:inline-block;margin-top:10px}
+.gallery-card.hidden{display:none}
 .pricing{background:#f0ede5}
 .price-card{border-top:4px solid var(--gold)}
 .contact{background:var(--dark);color:white;text-align:center}
 .contact h2{color:var(--gold);margin-bottom:12px}
 .contact p{margin:9px 0}
-.contact .btn{margin-top:20px}
-footer{background:#101915;color:#ddd;text-align:center;padding:22px 10px;font-size:14px}
-.whatsapp-float{position:fixed;bottom:20px;right:18px;z-index:50;background:#25d366;color:white;padding:13px 17px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 15px rgba(0,0,0,.25)}
-.modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.72);padding:20px;align-items:center;justify-content:center}
+.contact .btn{margin-top:18px}
+.hours{background:#fff8ed;text-align:center}
+.hours h2{color:var(--green);margin-bottom:10px}
+footer{background:#101915;color:#ddd;text-align:center;padding:24px;font-size:14px}
+.whatsapp-float{position:fixed;bottom:18px;right:16px;z-index:50;background:#25d366;color:white;padding:13px 18px;border-radius:50px;text-decoration:none;font-weight:bold}
+.modal{display:none;position:fixed;inset:0;z-index:100;background:#000b;align-items:center;justify-content:center;padding:15px}
 .modal.show{display:flex}
-.modal-box{width:100%;max-width:430px;background:white;border-radius:12px;padding:25px;max-height:85vh;overflow-y:auto;position:relative}
-.modal-box h2{color:var(--green);margin-bottom:8px;padding-right:25px}
-.modal-box p{color:#666;margin-bottom:18px;font-size:14px}
-.option-btn{display:block;width:100%;padding:13px;margin:9px 0;border:1px solid #ddd;border-radius:7px;background:#faf9f6;color:#222;text-align:left;font-size:15px;cursor:pointer}
-.option-btn:hover{border-color:var(--gold);background:#f8f0df}
-.close-btn{position:absolute;top:10px;right:14px;border:0;background:transparent;font-size:27px;cursor:pointer;color:#555}
+.modal-box{background:white;padding:22px;border-radius:12px;width:100%;max-width:450px;max-height:90vh;overflow:auto;position:relative;text-align:center}
+.modal-box h2{color:var(--green);margin-bottom:15px}
+.option-btn{display:block;width:100%;padding:13px;margin:9px 0;border:1px solid #ddd;border-radius:7px;background:#faf8f2;text-align:left;cursor:pointer;font-size:15px}
+.close-btn{position:absolute;right:12px;top:8px;background:none;border:0;font-size:27px;cursor:pointer}
+#imageModal img{width:100%;max-height:75vh;object-fit:contain}
 @media(max-width:600px){
-header{justify-content:center;text-align:center}
+header{justify-content:center}
 nav{justify-content:center}
-.hero{min-height:450px;padding:65px 7%}
-section{padding:55px 6%}
+.hero{padding:65px 6%;min-height:420px}
+section{padding:50px 5%}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">Premium Furniture Works</div>
+<div class="logo">🪑 Premium Furniture Works</div>
 <nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
 <a href="#gallery">Gallery</a>
+<a href="#pricing">Pricing</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -75,215 +84,244 @@ section{padding:55px 6%}
 <section class="hero" id="home">
 <div class="hero-content">
 <h1>Beautiful Furniture,<br><span>Made for Your Home</span></h1>
-<p>आपके घर और आपकी पसंद के अनुसार शानदार डिजाइन, बेहतरीन क्वालिटी और कस्टम फर्नीचर का काम।</p>
-<a class="btn" href="#services">Explore Our Services</a>
+<p>Premium Furniture Making & Repair. Beautiful designs, quality craftsmanship and reliable home service in Jaipur.</p>
+<a class="btn" href="#gallery">Explore Our Work</a>
+<a class="btn" href="https://wa.me/916378837457">WhatsApp Us</a>
 </div>
 </section>
 
 <section id="services">
 <div class="section-title">
 <h2>Our Services</h2>
-<p>आपकी जरूरत के अनुसार हर तरह का फर्नीचर कार्य</p>
+<p>Furniture solutions designed around your home</p>
 </div>
-<div class="services-grid" id="servicesGrid"></div>
+
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">🚪</div>
+<h3>Almirah Making</h3>
+<p>Custom wooden almirah, wardrobe and storage designs.</p>
+<button class="btn" onclick="askService('Almirah Making')">Get Details</button>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🛏️</div>
+<h3>Bed Making</h3>
+<p>Beautiful beds, headboards and customized bedroom furniture.</p>
+<button class="btn" onclick="askService('Bed Making')">Get Details</button>
+</div>
+
+<div class="service-card">
+<div class="service-icon">📺</div>
+<h3>TV Panel</h3>
+<p>Modern TV panels and stylish living room furniture.</p>
+<button class="btn" onclick="askService('TV Panel')">Get Details</button>
+</div>
+
+<div class="service-card">
+<div class="service-icon">🪚</div>
+<h3>Furniture Repair</h3>
+<p>Furniture repair, polishing and improvement work.</p>
+<button class="btn" onclick="askService('Furniture Repair')">Get Details</button>
+</div>
+</div>
 </section>
 
 <section class="why">
 <div class="section-title">
-<h2>Why Choose Us</h2>
-<p>आपका भरोसा और संतुष्टि हमारी प्राथमिकता है।</p>
+<h2>Why Choose Us?</h2>
+<p>Quality work and service you can trust</p>
 </div>
-<div class="why-grid">
-<div class="why-item"><h3>Quality Work</h3><p>मजबूत और अच्छी क्वालिटी का काम।</p></div>
-<div class="why-item"><h3>Custom Design</h3><p>आपकी पसंद और जरूरत के अनुसार डिजाइन।</p></div>
-<div class="why-item"><h3>Fair Pricing</h3><p>काम और मटेरियल के अनुसार उचित कीमत।</p></div>
-<div class="why-item"><h3>Customer Respect</h3><p>हर ग्राहक के साथ सम्मान और अच्छा व्यवहार।</p></div>
+
+<div class="features">
+<div class="feature">
+<h3>✨ Quality Work</h3>
+<p>Careful finishing and attention to detail.</p>
+</div>
+<div class="feature">
+<h3>🏠 Home Service</h3>
+<p>We provide service at your home.</p>
+</div>
+<div class="feature">
+<h3>💰 Custom Pricing</h3>
+<p>Price depends on design, size and material.</p>
+</div>
+<div class="feature">
+<h3>🤝 Customer Care</h3>
+<p>Respectful communication and reliable service.</p>
+</div>
 </div>
 </section>
 
-<section id="pricing" class="pricing">
+<section class="gallery-section" id="gallery">
 <div class="section-title">
-<h2>Our Pricing</h2>
-<p>हर काम की कीमत उसकी जरूरत और डिजाइन के अनुसार तय होती है।</p>
+<h2>Our Real Work Gallery</h2>
+<p>Some examples of our furniture work</p>
 </div>
-<div class="pricing-grid" id="pricingGrid"></div>
-<p style="text-align:center;margin-top:25px;color:#555">कोई फिक्स प्राइस नहीं — हर काम के लिए आपकी जरूरत के अनुसार कस्टम कोटेशन।</p>
-</section>
 
-<section id="gallery">
-<div class="section-title">
-<h2>Our Work Gallery</h2>
-<p>हमारे फर्नीचर कार्यों की कुछ झलकियाँ</p>
+<div class="filter-buttons">
+<button class="active" onclick="filterGallery('all',this)">All Work</button>
+<button onclick="filterGallery('almirah',this)">Almirah</button>
+<button onclick="filterGallery('bed',this)">Bed</button>
+<button onclick="filterGallery('tv',this)">TV Panel</button>
 </div>
+
 <div class="gallery-grid">
-<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Furniture design">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Bedroom furniture">
-<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Interior furniture">
+
+<div class="gallery-card" data-category="almirah">
+<img src="images/almirah-1.jpg" alt="Almirah Work" onclick="openImage(this.src)">
+<div class="gallery-info">
+<h3>Almirah Design 1</h3>
+<a class="btn" href="https://wa.me/916378837457?text=Hello%2C%20I%20want%20to%20know%20the%20price%20of%20this%20almirah.">Ask Price</a>
+</div>
+</div>
+
+<div class="gallery-card" data-category="almirah">
+<img src="images/almirah-2.jpg" alt="Almirah Work" onclick="openImage(this.src)">
+<div class="gallery-info">
+<h3>Almirah Design 2</h3>
+<a class="btn" href="https://wa.me/916378837457?text=Hello%2C%20I%20want%20to%20know%20the%20price%20of%20this%20almirah.">Ask Price</a>
+</div>
+</div>
+
+<div class="gallery-card" data-category="bed">
+<img src="images/bed-1.jpg" alt="Bed Work" onclick="openImage(this.src)">
+<div class="gallery-info">
+<h3>Bed Design</h3>
+<a class="btn" href="https://wa.me/916378837457?text=Hello%2C%20I%20want%20to%20know%20the%20price%20of%20this%20bed.">Ask Price</a>
+</div>
+</div>
+
+<div class="gallery-card" data-category="tv">
+<img src="images/tv-panel-1.jpg" alt="TV Panel Work" onclick="openImage(this.src)">
+<div class="gallery-info">
+<h3>TV Panel Design</h3>
+<a class="btn" href="https://wa.me/916378837457?text=Hello%2C%20I%20want%20to%20know%20the%20price%20of%20this%20TV%20panel.">Ask Price</a>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="contact" class="contact">
-<h2>Let's Create Something Beautiful</h2>
-<p>अपने फर्नीचर के काम के लिए हमसे संपर्क करें।</p>
-<p><strong>Address:</strong> Durgapura, Jaipur, Rajasthan</p>
-<p><strong>WhatsApp:</strong> +91 6378837457</p>
-<a class="btn" id="contactWhatsApp" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+<section class="pricing" id="pricing">
+<div class="section-title">
+<h2>Custom Furniture Pricing</h2>
+<p>Every project is different. Get a personalized quotation.</p>
+</div>
+
+<div class="pricing-grid">
+<div class="price-card">
+<h3>Almirah</h3>
+<p>Price depends on size, design and material.</p>
+<button class="btn" onclick="askService('Almirah Making')">Get Quote</button>
+</div>
+
+<div class="price-card">
+<h3>Bed</h3>
+<p>Custom size, design and finishing options.</p>
+<button class="btn" onclick="askService('Bed Making')">Get Quote</button>
+</div>
+
+<div class="price-card">
+<h3>TV Panel</h3>
+<p>Quotation according to your wall and design.</p>
+<button class="btn" onclick="askService('TV Panel')">Get Quote</button>
+</div>
+
+<div class="price-card">
+<h3>Repair Work</h3>
+<p>Repair cost depends on the work required.</p>
+<button class="btn" onclick="askService('Furniture Repair')">Get Quote</button>
+</div>
+</div>
+</section>
+
+<section class="hours">
+<h2>Our Service Hours</h2>
+<p>10:00 AM to 5:00 PM</p>
+<p>Home service available in Durgapura, Jaipur and nearby areas.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Premium Furniture Works</strong></p>
+<p>📍 Durgapura, Jaipur, Rajasthan</p>
+<p>📞 +91 6378837457</p>
+<p>🏠 Furniture service at your home</p>
+<a class="btn" href="https://wa.me/916378837457?text=Hello%2C%20I%20want%20to%20enquire%20about%20your%20furniture%20services.">Chat on WhatsApp</a>
 </section>
 
 <footer>
 <p>© 2026 Premium Furniture Works. All Rights Reserved.</p>
-<p>Durgapura, Jaipur, Rajasthan | +91 6378837457</p>
+<p>Made with care for beautiful homes.</p>
 </footer>
 
-<a class="whatsapp-float" id="floatingWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+<a class="whatsapp-float" href="https://wa.me/916378837457">WhatsApp</a>
 
-<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<div class="modal" id="serviceModal" onclick="closeService(event)">
 <div class="modal-box">
-<button class="close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
-<h2 id="modalTitle">Select an option</h2>
-<p id="modalDescription">कृपया अपनी जरूरत के अनुसार विकल्प चुनें।</p>
-<div id="modalOptions"></div>
+<button class="close-btn" onclick="closeService()">×</button>
+<h2 id="modalTitle">Get Details</h2>
+<p>How would you like to continue?</p>
+<button class="option-btn" onclick="sendWhatsApp('I want details about this service.')">📋 Get Service Details</button>
+<button class="option-btn" onclick="sendWhatsApp('I want to know the price for this work.')">💰 Ask for Price</button>
+<button class="option-btn" onclick="sendWhatsApp('I would like to book a home visit.')">🏠 Request Home Visit</button>
+</div>
+</div>
+
+<div class="modal" id="imageModal" onclick="closeImage()">
+<div class="modal-box">
+<button class="close-btn" onclick="closeImage()">×</button>
+<img id="largeImage" src="" alt="Furniture work enlarged">
 </div>
 </div>
 
 <script>
-const whatsappNumber = "916378837845";
+const phone = "916378837457";
+let selectedService = "";
 
-const services = [
-{
-name:"Almirah Making",
-icon:"🚪",
-description:"आपकी जगह और पसंद के अनुसार कस्टम अलमारी।",
-options:["नई अलमारी बनवानी है","अलमारी के डिजाइन देखने हैं","अलमारी की कीमत जाननी है","पुरानी अलमारी की मरम्मत करवानी है"]
-},
-{
-name:"Bed Making",
-icon:"🛏️",
-description:"मजबूत और खूबसूरत बेड आपकी पसंद के अनुसार।",
-options:["नया बेड बनवाना है","बेड के डिजाइन देखने हैं","बेड की कीमत जाननी है","पुराने बेड की मरम्मत करवानी है"]
-},
-{
-name:"TV Panel",
-icon:"📺",
-description:"आपके घर के लिए आकर्षक TV पैनल डिजाइन।",
-options:["नया TV पैनल बनवाना है","TV पैनल के डिजाइन देखने हैं","TV पैनल की कीमत जाननी है","पुराने TV पैनल की मरम्मत करवानी है"]
-},
-{
-name:"Furniture Repair",
-icon:"🪚",
-description:"पुराने फर्नीचर की मरम्मत और सुधार।",
-options:["फर्नीचर की मरम्मत करवानी है","मरम्मत का खर्च जानना है","फर्नीचर की फोटो भेजनी है"]
-},
-{
-name:"Custom Furniture",
-icon:"🪑",
-description:"आपकी जरूरत के अनुसार खास फर्नीचर।",
-options:["कस्टम फर्नीचर बनवाना है","कस्टम डिजाइन देखने हैं","कस्टम फर्नीचर की कीमत जाननी है"]
-}
-];
-
-const servicesGrid=document.getElementById("servicesGrid");
-const pricingGrid=document.getElementById("pricingGrid");
-const modal=document.getElementById("serviceModal");
-
-function createWhatsAppLink(message){
-return "https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent(message);
+function askService(service){
+selectedService = service;
+document.getElementById("modalTitle").textContent = service;
+document.getElementById("serviceModal").classList.add("show");
 }
 
-function openWhatsApp(message){
-window.open(createWhatsAppLink(message),"_blank","noopener");
+function closeService(event){
+if(!event || event.target.id === "serviceModal"){
+document.getElementById("serviceModal").classList.remove("show");
+}
 }
 
-function customerMessage(serviceName,selectedOption){
-return `नमस्ते! 🙏
-
-मैं Premium Furniture Works की ${serviceName} सर्विस के बारे में जानकारी प्राप्त करना चाहता/चाहती हूँ।
-
-मेरी आवश्यकता: ${selectedOption}
-
-कृपया अपनी सुविधा अनुसार मुझे डिजाइन, काम की प्रक्रिया और कस्टम कीमत के बारे में जानकारी देने का कष्ट करें।
-
-यदि आवश्यक हो तो मैं अपनी पसंद की फोटो या डिजाइन भी साझा कर सकता/सकती हूँ।
-
-आपके समय और सहयोग के लिए बहुत-बहुत धन्यवाद! 😊`;
+function sendWhatsApp(message){
+const fullMessage = "Hello Premium Furniture Works,%0A%0AI am interested in: " +
+encodeURIComponent(selectedService) + "%0A" + encodeURIComponent(message);
+window.open("https://wa.me/" + phone + "?text=" + fullMessage,"_blank");
+closeService();
 }
 
-function renderServices(){
-services.forEach((service,index)=>{
-const card=document.createElement("div");
-card.className="service-card";
-card.innerHTML=`
-<div class="service-icon">${service.icon}</div>
-<h3>${service.name}</h3>
-<p>${service.description}</p>
-<button class="btn" onclick="showServiceOptions(${index})">Get Details</button>
-`;
-servicesGrid.appendChild(card);
+function filterGallery(category,button){
+document.querySelectorAll(".filter-buttons button").forEach(btn=>{
+btn.classList.remove("active");
+});
+button.classList.add("active");
+
+document.querySelectorAll(".gallery-card").forEach(card=>{
+if(category === "all" || card.dataset.category === category){
+card.classList.remove("hidden");
+}else{
+card.classList.add("hidden");
+}
 });
 }
 
-function renderPricing(){
-services.forEach((service,index)=>{
-const card=document.createElement("div");
-card.className="price-card";
-card.innerHTML=`
-<h3>${service.name}</h3>
-<div style="font-size:30px;margin:10px">✨</div>
-<strong style="color:#244b3c">Custom Pricing</strong>
-<p>कीमत डिजाइन, साइज, मटेरियल और काम के अनुसार तय होगी।</p>
-<button class="btn" onclick="showServiceOptions(${index})">Get Custom Quote</button>
-`;
-pricingGrid.appendChild(card);
-});
+function openImage(src){
+document.getElementById("largeImage").src = src;
+document.getElementById("imageModal").classList.add("show");
 }
 
-function showServiceOptions(index){
-const service=services[index];
-document.getElementById("modalTitle").textContent=service.name;
-document.getElementById("modalDescription").textContent="कृपया अपनी जरूरत चुनें। हम आपकी सहायता करके प्रसन्न होंगे।";
-const optionsBox=document.getElementById("modalOptions");
-optionsBox.innerHTML="";
-
-service.options.forEach(option=>{
-const button=document.createElement("button");
-button.className="option-btn";
-button.textContent="➜ "+option;
-button.addEventListener("click",()=>{
-const message=customerMessage(service.name,option);
-openWhatsApp(message);
-closeModal();
-});
-optionsBox.appendChild(button);
-});
-
-modal.classList.add("show");
+function closeImage(){
+document.getElementById("imageModal").classList.remove("show");
 }
-
-function closeModal(){
-modal.classList.remove("show");
-}
-
-modal.addEventListener("click",event=>{
-if(event.target===modal) closeModal();
-});
-
-document.addEventListener("keydown",event=>{
-if(event.key==="Escape") closeModal();
-});
-
-const generalMessage=`नमस्ते! 🙏
-
-मैं Premium Furniture Works के फर्नीचर बनाने और मरम्मत के काम के बारे में जानकारी प्राप्त करना चाहता/चाहती हूँ।
-
-कृपया अपनी सुविधा अनुसार अपनी सेवाओं और कस्टम प्राइसिंग के बारे में जानकारी देने का कष्ट करें।
-
-आपके समय और सहयोग के लिए धन्यवाद! 😊`;
-
-document.getElementById("contactWhatsApp").href=createWhatsAppLink(generalMessage);
-document.getElementById("floatingWhatsApp").href=createWhatsAppLink(generalMessage);
-
-renderServices();
-renderPricing();
 </script>
 
 </body>
