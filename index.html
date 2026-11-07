@@ -1,46 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Furniture Making & Repair | Jaipur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furniture Making & Repair</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#24211e;background:#faf8f4;line-height:1.5}
-header{background:#241b16;color:white;padding:28px 18px;text-align:center}header h1{margin:0;font-size:30px;letter-spacing:1px}header p{margin:8px 0 0;color:#e8d8c8}
-nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:13px;background:#3a2b22}nav a{color:white;text-decoration:none;font-size:14px}
-.hero{padding:48px 20px;text-align:center;background:linear-gradient(135deg,#efe2d2,#faf8f4)}.hero h2{font-size:29px;margin:0 0 10px}.hero p{max-width:620px;margin:0 auto 20px}
-.btn{display:inline-block;background:#8a4e2d;color:white;padding:12px 19px;border-radius:7px;text-decoration:none;border:0;font-size:16px}
-section{padding:30px 18px;max-width:900px;margin:auto}h2{text-align:center}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 12px #0000000d}.card h3{margin-top:0}
-form{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 12px #0000000d;max-width:620px;margin:auto}
-label{display:block;margin:12px 0 5px;font-weight:bold}input,select,textarea{width:100%;padding:11px;border:1px solid #d7cec5;border-radius:6px;font:inherit}textarea{min-height:90px}
-small{color:#655b53}footer{text-align:center;background:#241b16;color:white;padding:22px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:#21150d}
+header{padding:18px;background:white;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:23px;font-weight:bold;color:#9b6414}
+nav a{margin:8px;color:#333;text-decoration:none;font-weight:bold}
+.btn{display:inline-block;padding:13px 22px;background:#ffbd2e;color:#222;text-decoration:none;border-radius:30px;font-weight:bold}
+.hero{padding:100px 25px;color:white;background:linear-gradient(90deg,#160d08e8,#160d0880),url('https://images.unsplash.com/photo-1600210342490-7a2a3c1f9a3b?auto=format&fit=crop&w=1600&q=85') center/cover}
+.hero h1{font-size:clamp(35px,6vw,65px);max-width:700px}
+.hero h1 span{color:#ffbd2e}
+.hero p{font-size:22px;line-height:1.6}
+section{padding:60px 20px}
+.title{text-align:center;font-size:35px}
+.subtitle{text-align:center;color:#777;margin-bottom:35px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1200px;margin:auto}
+.card{border:1px solid #eee;border-radius:15px;overflow:hidden;text-align:center;box-shadow:0 5px 20px #0001}
+.card img{width:100%;height:200px;object-fit:cover}
+.card h3{padding:10px}
+.card p{padding:0 15px;color:#777}
+.card a{display:inline-block;margin:15px;padding:10px 18px;background:#ffbd2e;color:#222;text-decoration:none;border-radius:25px}
+.why{background:#fff8ed}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:1100px;margin:auto}
+.feature{background:white;padding:25px;text-align:center;border-radius:15px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;max-width:1100px;margin:auto}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:15px}
+.contact{background:#281408;color:white;text-align:center}
+footer{background:#160b05;color:white;text-align:center;padding:25px}
+.whatsapp{position:fixed;right:15px;bottom:15px;background:#0b8f4d;color:white;padding:15px 20px;border-radius:30px;text-decoration:none;font-weight:bold}
+@media(max-width:600px){header{justify-content:center}nav{text-align:center}.hero{padding:70px 20px}}
 </style>
 </head>
 <body>
-<header><h1>FURNITURE MAKING & REPAIR</h1><p>Custom Furniture • New Designs • Repair Services</p></header>
-<nav><a href="#services">Services</a><a href="#booking">Book Service</a><a href="#contact">Contact</a></nav>
-<div class="hero"><h2>आपके घर के लिए बेहतर फर्नीचर</h2><p>अलमारी, बेड, TV पैनल और कस्टम फर्नीचर बनवाएँ। पुराने फर्नीचर की रिपेयरिंग के लिए भी संपर्क करें।</p><a class="btn" href="#booking">बुकिंग करें</a></div>
-<section id="services"><h2>हमारी सेवाएँ</h2><div class="cards">
-<div class="card"><h3>नया फर्नीचर</h3><p>अलमारी, बेड, TV यूनिट और घर के लिए कस्टम डिज़ाइन।</p></div>
-<div class="card"><h3>फर्नीचर रिपेयर</h3><p>पुरानी अलमारी, बेड और दूसरे फर्नीचर की मरम्मत।</p></div>
-<div class="card"><h3>कस्टम डिज़ाइन</h3><p>आपकी जगह और जरूरत के हिसाब से काम।</p></div>
-</div></section>
-<section id="booking"><h2>बुकिंग / कीमत पूछें</h2><form id="bookingForm">
-<label>आपका नाम</label><input id="name" required placeholder="नाम लिखें">
-<label>मोबाइल नंबर</label><input id="phone" required inputmode="tel" placeholder="मोबाइल नंबर">
-<label>किस काम के लिए संपर्क कर रहे हैं?</label><select id="work"><option>नया फर्नीचर बनवाना है</option><option>फर्नीचर रिपेयर करवाना है</option><option>कस्टम डिज़ाइन / कीमत पूछनी है</option></select>
-<label>इलाका / पूरा पता</label><input id="area" required placeholder="जैसे मालवीय नगर, जयपुर">
-<label>काम की जानकारी</label><textarea id="details" placeholder="क्या बनवाना या रिपेयर करवाना है?"></textarea>
-<label>फोटो (वैकल्पिक)</label><input id="photo" type="file" accept="image/*"><small>फोटो चुनने के बाद WhatsApp खुलेगा। वहाँ फोटो अलग से अटैच करके भेज सकते हैं।</small>
-<p><button class="btn" type="submit">WhatsApp पर बुकिंग भेजें</button></p>
-</form></section>
-<section id="contact"><h2>संपर्क करें</h2><p style="text-align:center">जयपुर और आसपास के क्षेत्रों में सेवा।</p><p style="text-align:center"><a class="btn" href="https://wa.me/916378837457">WhatsApp: 6378837457</a></p></section>
-<footer>Furniture Making • Custom Design • Repair Services<br>Jaipur, Rajasthan</footer>
-<script>
-document.getElementById('bookingForm').addEventListener('submit',function(e){
- e.preventDefault();
- const v=id=>document.getElementById(id).value.trim();
- const msg=`नमस्ते, मुझे फर्नीचर के काम के लिए बुकिंग करनी है।%0Aनाम: ${encodeURIComponent(v('name'))}%0Aमोबाइल: ${encodeURIComponent(v('phone'))}%0Aकाम: ${encodeURIComponent(v('work'))}%0Aइलाका/पता: ${encodeURIComponent(v('area'))}%0Aजानकारी: ${encodeURIComponent(v('details'))}%0Aफोटो: यदि चुनी है तो मैं WhatsApp चैट में अटैच करूँगा।`;
- window.location.href='https://wa.me/916378837457?text='+msg;
-});
-</script>
-</body></html>
+
+<header>
+<div class="logo">🪑 Furniture Making & Repair</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Furniture Making <span>& Repair</span></h1>
+<p>Modern Design. Strong Quality. Long Life.<br>
+Furniture made to fit your home and style.</p>
+<a class="btn" href="#contact">Get a Free Quote →</a>
+</section>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+<p class="subtitle">Custom furniture and professional repair work.</p>
+<div class="services">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=700&q=80">
+<h3>Almirah Making</h3><p>Stylish and spacious wardrobes.</p><a href="#contact">Get Details</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80">
+<h3>Bed Making</h3><p>Modern and comfortable beds.</p><a href="#contact">Get Details</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=700&q=80">
+<h3>TV Panel</h3><p>Elegant TV units and panels.</p><a href="#contact">Get Details</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80">
+<h3>Furniture Repair</h3><p>Old furniture, new life.</p><a href="#contact">Get Details</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80">
+<h3>Custom Furniture</h3><p>Furniture made as you need.</p><a href="#contact">Get Details</a>
+</div>
+</div>
+</section>
+
+<section class="why" id="about">
+<h2 class="title">Why Choose Us?</h2>
+<p class="subtitle">Quality craftsmanship and furniture built to last.</p>
+<div class="features">
+<div class="feature"><h3>🪵 Quality Work</h3><p>Careful finishing and durable materials.</p></div>
+<div class="feature"><h3>⏱️ On-Time Delivery</h3><p>We respect your time.</p></div>
+<div class="feature"><h3>💰 Fair Pricing</h3><p>Options for your budget.</p></div>
+<div class="feature"><h3>🛠️ Skilled Team</h3><p>Professional making and repair.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="title">Furniture Gallery</h2>
+<p class="subtitle">Ideas for your next home project.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="title">Let's Build Your Dream Furniture</h2>
+<p>Tell us what you need. Get a quick response and free estimate.</p>
+<a class="btn" href="https://wa.me/919876543210">Book on WhatsApp</a>
+</section>
+
+<footer>
+<p>📍 Jaipur, rajthan</p>
+<p>☎ +91 6378837457</p>
+<p>© 2026 Furniture Making & Repair</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919876543210">💬 WhatsApp</a>
+</body>
+</html>
