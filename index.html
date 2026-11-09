@@ -3,324 +3,118 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#17130f">
-
-<title>Rahul Furniture Jaipur | Premium Furniture</title>
-<meta name="description" content="Rahul Furniture Jaipur - Premium Almirah, Bed, TV Panel and Custom Furniture.">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahul Furniture | Premium Modular Furniture Jaipur</title>
+<meta name="description" content="Rahul Furniture Jaipur - अलमारी, बेड, TV पैनल, वॉल पैनल और कस्टम फर्नीचर।">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#120e0a;color:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-
-header{
-position:sticky;top:0;z-index:50;
-background:#21180f;border-bottom:1px solid #8b672f;
-padding:16px 5%;display:flex;justify-content:space-between;
-align-items:center;flex-wrap:wrap;gap:12px
-}
-.logo{font-size:23px;font-weight:bold;color:#edc78d}
-nav{display:flex;gap:15px;flex-wrap:wrap;font-size:14px}
-nav a:hover{color:#edc78d}
-
-.hero{
-padding:85px 6%;text-align:center;
-background:radial-gradient(circle at top,#49301a,#120e0a 70%)
-}
-.hero h1{font-size:clamp(35px,7vw,65px);color:#edc78d;line-height:1.2}
-.hero h2{margin-top:15px;font-size:21px}
-.hero p{max-width:700px;margin:20px auto;color:#ddd}
-
-.btn{
-display:inline-block;padding:13px 23px;margin:7px;
-border-radius:7px;font-weight:bold;transition:.3s
-}
-.btn:hover{transform:translateY(-3px)}
-.call{background:#edc78d;color:#17130f}
-.whatsapp{background:#25d366;color:white}
-.outline{border:1px solid #edc78d;color:#edc78d}
-
-section{padding:60px 6%;max-width:1250px;margin:auto}
-.section-title{text-align:center;font-size:32px;color:#edc78d;margin-bottom:10px}
-.sub{text-align:center;color:#bbb;margin-bottom:35px}
-
-.cards,.gallery{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
-}
-.card{
-background:linear-gradient(145deg,#302319,#1b140e);
-border:1px solid #624728;padding:25px;border-radius:12px;text-align:center
-}
-.card h3{color:#edc78d;margin-bottom:8px}
-.card p{color:#ddd;font-size:14px}
-.card:hover{border-color:#edc78d}
-
-.photo{
-background:#21180f;border:1px solid #634728;
-border-radius:12px;overflow:hidden;cursor:pointer
-}
-.photo img{
-width:100%;height:250px;object-fit:cover;display:block;transition:.4s
-}
-.photo:hover img{transform:scale(1.06)}
-.photo h3{padding:14px;text-align:center;color:#edc78d;font-size:16px}
-
-.area{
-text-align:center;background:#24190f;border:1px solid #634728;
-padding:30px;border-radius:12px
-}
-.area h3{color:#edc78d}
-.area p{color:#ddd;margin-top:10px}
-.contact{text-align:center}
-
-footer{
-text-align:center;padding:25px;background:#21180f;
-border-top:1px solid #634728;color:#bbb
-}
-
-.float-wa{
-position:fixed;right:18px;bottom:22px;z-index:90;
-background:#25d366;color:white;padding:13px 18px;
-border-radius:50px;font-weight:bold;box-shadow:0 4px 20px #0008
-}
-
-/* Fullscreen Photo Viewer */
-#viewer{
-display:none;position:fixed;inset:0;background:#000f;
-z-index:100;align-items:center;justify-content:center;
-flex-direction:column;padding:55px 12px 20px
-}
-#viewer.show{display:flex}
-#largePhoto{max-width:100%;max-height:78vh;object-fit:contain}
-#photoTitle{color:#edc78d;margin-top:12px;text-align:center}
-.close,.prev,.next{
-position:absolute;background:#edc78d;border:0;border-radius:50%;
-width:42px;height:42px;font-size:25px;cursor:pointer
-}
-.close{top:12px;right:15px}
-.prev{left:12px;top:50%}
-.next{right:12px;top:50%}
-
-@media(max-width:600px){
-header{justify-content:center}
-nav{justify-content:center}
-.hero{padding:55px 5%}
-section{padding:45px 5%}
-.photo img{height:220px}
-}
+:root{--bg:#100e0c;--panel:#1c1713;--gold:#d9ad63;--gold2:#f3d79a;--text:#f8f3eb;--muted:#bdb2a5;--line:#3b2d21}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.container{width:min(1140px,92%);margin:auto}.topbar{background:#090807;color:#d6c8b5;text-align:center;padding:8px;font-size:13px;letter-spacing:.3px}
+header{position:sticky;top:0;z-index:20;background:#100e0cf2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-weight:900;letter-spacing:.6px;font-size:21px;color:var(--gold2)}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:500}
+nav{display:flex;gap:20px;align-items:center;font-size:14px;color:#e9dfd2}nav a:hover{color:var(--gold2)}.nav-cta{background:var(--gold);color:#20150a;padding:9px 15px;border-radius:30px;font-weight:800}
+.hero{padding:76px 0 62px;background:radial-gradient(ellipse at 75% 15%,#53371d66,transparent 42%),linear-gradient(120deg,#100e0c,#20160f 60%,#100e0c)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(36px,5vw,64px);line-height:1.08;margin:15px 0 18px;letter-spacing:-1.6px}h1 span{color:var(--gold2)}.lead{font-size:17px;color:var(--muted);max-width:610px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);padding:12px 19px;border-radius:30px;font-weight:800;cursor:pointer;transition:.2s}.btn.gold{background:var(--gold);color:#21160b}.btn.outline{color:var(--gold2)}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.hero-card{border:1px solid #6a4a2d;border-radius:22px;padding:25px;background:linear-gradient(145deg,#2b1d12,#17110c);box-shadow:0 25px 60px #0005}.hero-card .big{font-size:27px;font-weight:900;color:var(--gold2);line-height:1.2}.hero-card p{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.stats div{padding:13px 8px;border-radius:12px;background:#ffffff08;text-align:center}.stats strong{display:block;color:var(--gold2);font-size:20px}.stats span{font-size:11px;color:var(--muted)}
+section{padding:68px 0}.section-head{text-align:center;margin:0 auto 35px;max-width:700px}.section-head h2{font-size:clamp(27px,3vw,40px);margin:8px 0;color:var(--gold2)}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:22px;transition:.2s}.service:hover{border-color:#a97b3e;transform:translateY(-4px)}.service .icon{font-size:27px}.service h3{margin:9px 0;color:var(--gold2)}.service p{font-size:14px;color:var(--muted);min-height:50px}.service button{border:0;background:none;color:var(--gold);font-weight:800;padding:0;cursor:pointer}
+.price-section{background:linear-gradient(180deg,#17110c,#100e0c)}.quote-wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:25px;align-items:start}.quote-info,.quote-form{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px}.quote-info h3{color:var(--gold2);font-size:25px;margin-top:0}.quote-info p,.quote-info li{color:var(--muted)}.quote-info ul{padding-left:20px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:13px;color:#e5d4bd;font-weight:700}input,select,textarea{width:100%;padding:12px 13px;border-radius:10px;border:1px solid #493729;background:#100d0a;color:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:95px;resize:vertical}.hint{font-size:12px;color:var(--muted)}.quote-form .btn{grid-column:1/-1;width:100%;border:0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.photo{height:230px;border-radius:15px;border:1px solid var(--line);overflow:hidden;background:#21170f;position:relative}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}.photo:hover img{transform:scale(1.05)}.photo span{position:absolute;bottom:0;left:0;right:0;padding:12px;background:linear-gradient(transparent,#000c);font-weight:700}
+.areas{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#17110c}.area-pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.area-pills span{border:1px solid #62482b;color:var(--gold2);padding:8px 14px;border-radius:25px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-box{padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.contact-box h3{color:var(--gold2);margin-top:0}.contact-box p{color:var(--muted)}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:30;background:#20c66a;color:#062b14;border-radius:50px;padding:13px 18px;font-weight:900;box-shadow:0 8px 25px #0006}
+@media(max-width:850px){nav{gap:10px;font-size:12px}.hero-grid,.quote-wrap{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.nav{flex-wrap:wrap}.brand{font-size:18px}nav{width:100%;justify-content:space-between;overflow:auto;padding-bottom:3px}.nav-cta{display:none}.hero{padding:48px 0}.cards{grid-template-columns:1fr 1fr;gap:10px}.service{padding:15px}.service p{min-height:0}.gallery{grid-template-columns:1fr 1fr}.photo{height:160px}form,.contact-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.stats{gap:6px}.stats strong{font-size:17px}}
+.hero{min-height:570px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-110px;top:40px;width:430px;height:430px;border:1px solid #8d6439;border-radius:50%;opacity:.18;pointer-events:none}
+.hero-card{position:relative;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:center}
+.hero-card:after{content:"RF";position:absolute;right:-12px;bottom:-72px;font-size:190px;font-weight:900;line-height:1;color:#e5b96c0c;pointer-events:none}
+.section-head h2{letter-spacing:-.6px}
+.service{position:relative;overflow:hidden}
+.service:after{content:"";position:absolute;left:0;top:0;width:3px;height:0;background:var(--gold);transition:.25s}
+.service:hover:after{height:100%}
+.quote-form{box-shadow:0 18px 45px #0003}
+.photo{box-shadow:0 12px 30px #0002}
+.contact-box{transition:.2s}.contact-box:hover{border-color:#8e6538}
+@media(max-width:560px){.hero{min-height:auto}.hero:after{width:220px;height:220px;right:-90px}.hero-card{min-height:230px}}
 </style>
 </head>
-
 <body>
+<div class="topbar">JAIPUR, RAJASTHAN &nbsp; • &nbsp; CUSTOM FURNITURE &nbsp; • &nbsp; DESIGN / MAKING / INSTALLATION</div>
+<header><div class="container nav">
+<a class="brand" href="#home">RAHUL FURNITURE<small>CRAFTED FOR YOUR HOME</small></a>
+<nav><a href="#services">Services</a><a href="#gallery">Our Work</a><a href="#quote">Price Enquiry</a><a href="#contact">Contact</a></nav>
+<a class="nav-cta" href="#quote">Get Estimate ↗</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><div class="eyebrow">RAHUL FURNITURE — JAIPUR</div><h1>हर कोने में<br><span>आपकी पसंद का डिज़ाइन</span></h1>
+<p class="lead">Premium look, smart storage और साफ़ finishing—अलमारी, TV Panel, बेड, Wall Panel और custom furniture आपके घर व बजट के अनुसार।</p>
+<div class="actions"><a class="btn gold" href="#quote">अपना काम चुनें / Price पूछें</a><a class="btn outline" href="tel:6378837457">Call: 6378837457</a></div>
+<p class="hint">नया काम • पुराना काम • Repair • Custom Design</p></div>
+<div class="hero-card"><div class="eyebrow">YOUR SPACE • YOUR STYLE</div><div class="big">सोच आपकी,<br>फर्नीचर हमारा।</div><p>आप आइटम और काम का प्रकार चुनें—आपकी enquiry सीधे WhatsApp पर भेजें।</p><div class="stats"><div><strong>Custom</strong><span>SIZE & DESIGN</span></div><div><strong>Finish</strong><span>NEAT WORK</span></div><div><strong>Jaipur</strong><span>SERVICE AREA</span></div></div></div>
+</div></section>
 
-<header>
-<div class="logo">RAHUL FURNITURE</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#work">Our Work</a>
-<a href="#ideas">Design Ideas</a>
-<a href="#area">Location</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<div class="hero" id="home">
-<h1>RAHUL FURNITURE</h1>
-<h2>Premium Custom Furniture | Jaipur</h2>
-<p>आपके घर के लिए शानदार डिजाइन, बेहतरीन फिटिंग और आपकी पसंद का कस्टम फर्नीचर।</p>
-
-<a class="btn call" href="tel:6378837457">☎ CALL NOW: 6378837457</a>
-
-<a class="btn whatsapp" href="https://wa.me/916378837457?text=Namaste%20Rahul%20Furniture"
-target="_blank" rel="noopener">WhatsApp: 6378837457</a>
-</div>
-
-<section id="services">
-<h2 class="section-title">Our Services</h2>
-<p class="sub">Premium Furniture Design & Fitting</p>
-
+<section id="services"><div class="container"><div class="section-head"><div class="eyebrow">Explore our work</div><h2>आपके घर के लिए सही Furniture</h2><p>हर कार्ड का नाम उसी काम के अनुसार रखा गया है—TV Panel, अलमारी, बेड और Wall Panel अलग-अलग। किसी काम की enquiry करने के लिए नीचे क्लिक करें।</p></div>
 <div class="cards">
-<div class="card"><h3>Almirah</h3><p>Modern Designer Almirah & Wardrobe</p></div>
-<div class="card"><h3>Bed</h3><p>Premium Bed & Storage Design</p></div>
-<div class="card"><h3>TV Panel</h3><p>Luxury TV Unit & Marble Panel</p></div>
-<div class="card"><h3>Custom Furniture</h3><p>आपकी जगह के अनुसार डिजाइन</p></div>
-<div class="card"><h3>Counter & Fitting</h3><p>Counter, Fitting और Installation</p></div>
-<div class="card"><h3>Repair & Renovation</h3><p>Furniture Repair और Modification</p></div>
-</div>
-</section>
+<div class="service"><div class="icon">🪵</div><h3>अलमारी (Wardrobe)</h3><p>Bedroom wardrobe, sliding या hinged अलमारी और अंदर की shelves।</p><button onclick="chooseItem('अलमारी (Wardrobe)')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">📺</div><h3>TV Panel</h3><p>TV unit, TV back panel, storage और modern TV wall design।</p><button onclick="chooseItem('TV Panel')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">🛏️</div><h3>बेड (Bed)</h3><p>Double bed, storage bed, headboard और custom bed design।</p><button onclick="chooseItem('बेड (Bed)')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">🧱</div><h3>Wall Panel</h3><p>Decorative wall panels, wooden finish और feature wall।</p><button onclick="chooseItem('Wall Panel')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">🚪</div><h3>Kitchen / Cabinets</h3><p>Kitchen cabinets, storage units और modular-style solutions।</p><button onclick="chooseItem('Kitchen / Cabinets')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">🪑</div><h3>Furniture Repair</h3><p>पुराने furniture की repair, बदलाव और finishing का काम।</p><button onclick="chooseItem('Furniture Repair')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">✨</div><h3>Custom Furniture</h3><p>आपके design, size और जरूरत के अनुसार कोई भी furniture।</p><button onclick="chooseItem('Custom Furniture')">इस काम की कीमत पूछें →</button></div>
+<div class="service"><div class="icon">🏠</div><h3>Other Work</h3><p>कोई दूसरा furniture या interior woodwork करवाना हो।</p><button onclick="chooseItem('Other Work')">इस काम की कीमत पूछें →</button></div>
+</div></div></section>
 
-<section id="work">
-<h2 class="section-title">Our Real Work</h2>
-<p class="sub">हमारे वास्तविक काम की तस्वीरें</p>
+<section class="price-section" id="quote"><div class="container"><div class="section-head"><div class="eyebrow">Let's plan your furniture</div><h2>अपना काम बताएं, Estimate पाएं</h2><p>यहाँ नया / पुराना / custom चुनकर अपनी details भरें। Submit करने पर WhatsApp में enquiry तैयार हो जाएगी।</p></div>
+<div class="quote-wrap"><div class="quote-info"><h3>आपके काम का सही estimate</h3><p>Price काम के size, material, design और finishing पर निर्भर हो सकती है। Details भेजें ताकि सही quotation दिया जा सके।</p><ul><li>Furniture item चुनें</li><li>New / Old / Custom चुनें</li><li>Size और details लिखें</li><li>WhatsApp पर enquiry भेजें</li></ul><a class="btn outline" href="tel:6378837457">सीधे Call करें: 6378837457</a></div>
+<div class="quote-form"><form id="enquiryForm">
+<div class="field"><label for="item">कौन-सा काम करवाना है? *</label><select id="item" required><option value="">काम चुनें</option><option>अलमारी (Wardrobe)</option><option>TV Panel</option><option>बेड (Bed)</option><option>Wall Panel</option><option>Kitchen / Cabinets</option><option>Furniture Repair</option><option>Custom Furniture</option><option>Other Work</option></select></div>
+<div class="field"><label for="workType">काम का प्रकार *</label><select id="workType" required><option value="">चुनें</option><option>नया काम (New)</option><option>पुराना काम / Repair</option><option>Custom Design</option></select></div>
+<div class="field"><label for="customer">आपका नाम *</label><input id="customer" placeholder="नाम लिखें" required></div>
+<div class="field"><label for="phone">आपका मोबाइल नंबर</label><input id="phone" type="tel" placeholder="मोबाइल नंबर"></div>
+<div class="field"><label for="size">Size / Measurement</label><input id="size" placeholder="जैसे 6×7 ft / पता नहीं"></div>
+<div class="field"><label for="budget">Budget (optional)</label><select id="budget"><option>Budget बताना चाहूँगा</option><option>₹10,000 तक</option><option>₹10,000–₹25,000</option><option>₹25,000–₹50,000</option><option>₹50,000 से ऊपर</option><option>पहले estimate बताएं</option></select></div>
+<div class="field full"><label for="details">काम की Details / Design / Location</label><textarea id="details" placeholder="किस तरह का design, material या location?"></textarea></div>
+<div class="field full"><span class="hint">Submit करने पर WhatsApp खुलेगा और आपकी enquiry message में आ जाएगी।</span></div>
+<button class="btn gold" type="submit">WhatsApp पर Price Enquiry भेजें ↗</button>
+</form></div></div></div></section>
 
+<section id="gallery"><div class="container"><div class="section-head"><div class="eyebrow">Craft & details</div><h2>हमारे काम की झलक</h2><p>फोटो captions neutral रखे गए हैं ताकि गलत category न लिखे।</p></div>
 <div class="gallery">
-
-<div class="photo">
-<img src="IMG_20260112_211051.jpg" alt="Almirah Work">
-<h3>Almirah Work</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20260112_222354.jpg" alt="Almirah Project">
-<h3>Almirah Project</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20260128_144324.jpg" alt="TV Panel Work">
-<h3>TV Panel Work</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20260202_092404.jpg" alt="Furniture Counter">
-<h3>Furniture Counter</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20261021_080129.jpg" alt="Bed Work">
-<h3>Bed Work</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20261104_155357.jpg" alt="TV Unit Work">
-<h3>TV Unit Work</h3>
-</div>
-
-<div class="photo">
-<img src="IMG_20261104_155406.jpg" alt="Furniture Work">
-<h3>Furniture Work</h3>
-</div>
-
-</div>
-</section>
-
-<section id="ideas">
-<h2 class="section-title">Premium Design Ideas</h2>
-<p class="sub">आपकी पसंद के शानदार Furniture Designs</p>
-
-<div class="gallery">
-
-<div class="photo">
-<img src="images.jpeg" alt="Furniture Design">
-<h3>Modern Furniture Design</h3>
-</div>
-
-<div class="photo">
-<img src="images (2).jpeg" alt="TV Furniture Design">
-<h3>Designer Furniture</h3>
-</div>
-
-<div class="photo">
-<img src="product-jpeg.jpg" alt="Premium Furniture">
-<h3>Premium Furniture</h3>
-</div>
-
-<div class="photo">
-<img src="wooden-bedroom-almirah.jpg" alt="Wooden Bedroom Almirah">
-<h3>Wooden Bedroom Almirah</h3>
-</div>
-
-<div class="photo">
-<img src="pflo_gal_AAA00004-HDR6.webp" alt="Furniture Inspiration">
-<h3>Furniture Inspiration</h3>
-</div>
-
-</div>
-</section>
-
-<section id="area">
-<h2 class="section-title">Our Service Locations</h2>
-
-<div class="area">
-<h3>📍 Jaipur, Rajasthan</h3>
-<p>Jagatpura • Malviya Nagar • Jhalana • Mama Hotel Area</p>
-<p>Serving Jaipur & Nearby Areas</p>
-<p>Premium Furniture Design, Manufacturing & Installation</p>
-
-<a class="btn outline"
-href="https://www.google.com/maps/search/?api=1&query=Jagatpura+Malviya+Nagar+Jhalana+Jaipur"
-target="_blank" rel="noopener">
-📍 VIEW SERVICE AREA ON MAP
-</a>
-</div>
-</section>
-
-<section id="contact" class="contact">
-<h2 class="section-title">Contact Rahul Furniture</h2>
-<p class="sub">अपना डिजाइन WhatsApp पर भेजें और कस्टम रेट जानें।</p>
-
-<a class="btn call" href="tel:6378837457">☎ CALL NOW: 6378837457</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/916378837457?text=Namaste%2C%20mujhe%20furniture%20banwana%20hai.%20Main%20design%20photo%20bhejunga."
-target="_blank" rel="noopener">
-WhatsApp: 6378837457
-</a>
-</section>
-
-<footer>
-<p>© 2026 Rahul Furniture | Jaipur Rajasthan</p>
-<p>Premium Almirah • Bed • TV Panel • Custom Furniture</p>
-</footer>
-
-<a class="float-wa"
-href="https://wa.me/916378837457?text=Namaste%20Rahul%20Furniture"
-target="_blank" rel="noopener">
-WhatsApp
-</a>
-
-<div id="viewer">
-<button class="close" id="closeViewer">×</button>
-<button class="prev" id="prevPhoto">‹</button>
-<img id="largePhoto" src="" alt="Furniture">
-<h3 id="photoTitle"></h3>
-<button class="next" id="nextPhoto">›</button>
-</div>
-
+<div class="photo"><img src="IMG_20260112_211051.jpg" alt="Rahul Furniture project photo 1" loading="lazy"><span>Our Work • Project 01</span></div>
+<div class="photo"><img src="IMG_20260112_222354.jpg" alt="Rahul Furniture project photo 2" loading="lazy"><span>Our Work • Project 02</span></div>
+<div class="photo"><img src="IMG_20260128_144324.jpg" alt="Rahul Furniture project photo 3" loading="lazy"><span>Our Work • Project 03</span></div>
+<div class="photo"><img src="IMG_20260202_092404.jpg" alt="Rahul Furniture project photo 4" loading="lazy"><span>Our Work • Project 04</span></div>
+<div class="photo"><img src="IMG_20261021_080129.jpg" alt="Rahul Furniture project photo 5" loading="lazy"><span>Our Work • Project 05</span></div>
+<div class="photo"><img src="IMG_20261104_155357.jpg" alt="Rahul Furniture project photo 6" loading="lazy"><span>Our Work • Project 06</span></div>
+<div class="photo"><img src="IMG_20261104_155406.jpg" alt="Rahul Furniture project photo 7" loading="lazy"><span>Our Work • Project 07</span></div>
+<div class="photo"><img src="wooden-bedroom-almirah.jpg" alt="Wooden bedroom almirah" loading="lazy"><span>Wooden Bedroom Almirah</span></div>
+<div class="photo"><img src="product-jpeg.jpg" alt="Furniture product image" loading="lazy"><span>Furniture Product</span></div>
+</div></div></section>
+<section class="areas"><div class="container"><div class="section-head"><div class="eyebrow">Service locations</div><h2>Jaipur में Service</h2><p>Jagatpura • Malviya Nagar • Jhalana • Mama Hotel Area • आसपास Jaipur</p><a class="btn outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jagatpura+Malviya+Nagar+Jhalana+Jaipur">Google Maps पर Area देखें ↗</a></div><div class="area-pills"><span>Jagatpura</span><span>Malviya Nagar</span><span>Jhalana</span><span>Mama Hotel Area</span><span>Nearby Jaipur</span></div></div></section>
+<section id="contact"><div class="container"><div class="section-head"><div class="eyebrow">Let's talk</div><h2>Contact Rahul Furniture</h2><p>अपने काम की details भेजें या सीधे call करें।</p></div><div class="contact-grid">
+<div class="contact-box"><h3>Call Now</h3><p>सीधे बात करने के लिए</p><a class="btn gold" href="tel:6378837457">📞 6378837457</a></div>
+<div class="contact-box"><h3>WhatsApp</h3><p>Photo, design और price enquiry भेजें</p><a class="btn outline" target="_blank" rel="noopener" href="https://wa.me/916378837457">WhatsApp: 6378837457</a></div>
+</div></div></section>
+</main>
+<footer><div class="container">© <span id="year"></span> Rahul Furniture • Jaipur, Rajasthan • Made with care</div></footer>
+<a class="float-wa" target="_blank" rel="noopener" href="https://wa.me/916378837457">WhatsApp ↗</a>
 <script>
-const photos=[...document.querySelectorAll(".gallery .photo")];
-const viewer=document.getElementById("viewer");
-const largePhoto=document.getElementById("largePhoto");
-const photoTitle=document.getElementById("photoTitle");
-let current=0;
-
-function showPhoto(index){
-current=(index+photos.length)%photos.length;
-const img=photos[current].querySelector("img");
-largePhoto.src=img.src;
-largePhoto.alt=img.alt;
-photoTitle.textContent=photos[current].querySelector("h3").textContent;
-viewer.classList.add("show");
-document.body.style.overflow="hidden";
-}
-
-function closePhoto(){
-viewer.classList.remove("show");
-document.body.style.overflow="";
-largePhoto.src="";
-}
-
-photos.forEach((photo,index)=>{
-photo.addEventListener("click",()=>showPhoto(index));
-});
-
-document.getElementById("closeViewer").addEventListener("click",closePhoto);
-document.getElementById("prevPhoto").addEventListener("click",()=>showPhoto(current-1));
-document.getElementById("nextPhoto").addEventListener("click",()=>showPhoto(current+1));
-
-viewer.addEventListener("click",e=>{
-if(e.target===viewer)closePhoto();
-});
-
-document.addEventListener("keydown",e=>{
-if(!viewer.classList.contains("show"))return;
-if(e.key==="Escape")closePhoto();
-if(e.key==="ArrowLeft")showPhoto(current-1);
-if(e.key==="ArrowRight")showPhoto(current+1);
+document.getElementById('year').textContent=new Date().getFullYear();
+function chooseItem(name){document.getElementById('item').value=name;document.getElementById('quote').scrollIntoView({behavior:'smooth'});setTimeout(()=>document.getElementById('workType').focus(),450);}
+document.getElementById('enquiryForm').addEventListener('submit',function(e){e.preventDefault();
+const v=id=>document.getElementById(id).value.trim();
+const message=`नमस्ते Rahul Furniture! मुझे price/estimate चाहिए।%0Aकाम: ${encodeURIComponent(v('item'))}%0Aकाम का प्रकार: ${encodeURIComponent(v('workType'))}%0Aनाम: ${encodeURIComponent(v('customer'))}%0Aमोबाइल: ${encodeURIComponent(v('phone')||'नहीं दिया')}%0ASize: ${encodeURIComponent(v('size')||'नहीं पता')}%0ABudget: ${encodeURIComponent(v('budget'))}%0ADetails: ${encodeURIComponent(v('details')||'कृपया संपर्क करें')}`;
+window.open('https://wa.me/916378837457?text='+message,'_blank');
 });
 </script>
-
 </body>
-</html>
+  </html>
+  
