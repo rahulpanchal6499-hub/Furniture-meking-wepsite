@@ -1,183 +1,326 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#17130f">
-<title>Rahul Furniture | Custom Furniture Jaipur</title>
-<meta name="description" content="Rahul Furniture Jaipur में अलमारी, बेड, TV यूनिट और कस्टम फर्नीचर बनाने की सुविधा।">
+
+<title>Rahul Furniture Jaipur | Premium Furniture</title>
+<meta name="description" content="Rahul Furniture Jaipur - Premium Almirah, Bed, TV Panel and Custom Furniture.">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#17130f;color:#fff;line-height:1.6}
+body{font-family:Arial,sans-serif;background:#120e0a;color:#fff;line-height:1.6}
 a{text-decoration:none;color:inherit}
-header{background:#211a13;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;position:sticky;top:0;z-index:10;border-bottom:1px solid #6c512e}
-.logo{font-size:23px;font-weight:bold;color:#e8bd79}
+
+header{
+position:sticky;top:0;z-index:50;
+background:#21180f;border-bottom:1px solid #8b672f;
+padding:16px 5%;display:flex;justify-content:space-between;
+align-items:center;flex-wrap:wrap;gap:12px
+}
+.logo{font-size:23px;font-weight:bold;color:#edc78d}
 nav{display:flex;gap:15px;flex-wrap:wrap;font-size:14px}
-nav a:hover{color:#e8bd79}
-.hero{padding:75px 7%;text-align:center;background:linear-gradient(135deg,#302317,#17130f)}
-.hero h1{font-size:clamp(32px,7vw,52px);color:#edc78d;line-height:1.2}
-.hero p{max-width:650px;margin:18px auto;color:#ddd}
-.btn{display:inline-block;background:#d7a75f;color:#17130f;padding:12px 22px;border-radius:6px;font-weight:bold;margin:7px}
-.btn.outline{background:transparent;color:#edc78d;border:1px solid #d7a75f}
-section{padding:55px 6%;max-width:1200px;margin:auto}
-.section-title{text-align:center;color:#edc78d;font-size:30px;margin-bottom:12px}
-.sub{text-align:center;color:#ccc;margin-bottom:30px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:#282018;border:1px solid #59452d;border-radius:10px;padding:22px;text-align:center}
+nav a:hover{color:#edc78d}
+
+.hero{
+padding:85px 6%;text-align:center;
+background:radial-gradient(circle at top,#49301a,#120e0a 70%)
+}
+.hero h1{font-size:clamp(35px,7vw,65px);color:#edc78d;line-height:1.2}
+.hero h2{margin-top:15px;font-size:21px}
+.hero p{max-width:700px;margin:20px auto;color:#ddd}
+
+.btn{
+display:inline-block;padding:13px 23px;margin:7px;
+border-radius:7px;font-weight:bold;transition:.3s
+}
+.btn:hover{transform:translateY(-3px)}
+.call{background:#edc78d;color:#17130f}
+.whatsapp{background:#25d366;color:white}
+.outline{border:1px solid #edc78d;color:#edc78d}
+
+section{padding:60px 6%;max-width:1250px;margin:auto}
+.section-title{text-align:center;font-size:32px;color:#edc78d;margin-bottom:10px}
+.sub{text-align:center;color:#bbb;margin-bottom:35px}
+
+.cards,.gallery{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
+}
+.card{
+background:linear-gradient(145deg,#302319,#1b140e);
+border:1px solid #624728;padding:25px;border-radius:12px;text-align:center
+}
 .card h3{color:#edc78d;margin-bottom:8px}
 .card p{color:#ddd;font-size:14px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.photo{background:#282018;border:1px solid #59452d;border-radius:9px;overflow:hidden;cursor:pointer}
-.photo img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .3s}
-.photo:hover img{transform:scale(1.04)}
-.photo h3{padding:12px;text-align:center;color:#edc78d;font-size:16px}
-.area{text-align:center;background:#282018;border-radius:10px;padding:25px}
+.card:hover{border-color:#edc78d}
+
+.photo{
+background:#21180f;border:1px solid #634728;
+border-radius:12px;overflow:hidden;cursor:pointer
+}
+.photo img{
+width:100%;height:250px;object-fit:cover;display:block;transition:.4s
+}
+.photo:hover img{transform:scale(1.06)}
+.photo h3{padding:14px;text-align:center;color:#edc78d;font-size:16px}
+
+.area{
+text-align:center;background:#24190f;border:1px solid #634728;
+padding:30px;border-radius:12px
+}
+.area h3{color:#edc78d}
 .area p{color:#ddd;margin-top:10px}
 .contact{text-align:center}
-footer{text-align:center;background:#211a13;padding:22px;color:#bbb}
-#viewer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:100;align-items:center;justify-content:center;flex-direction:column;padding:55px 12px 20px}
+
+footer{
+text-align:center;padding:25px;background:#21180f;
+border-top:1px solid #634728;color:#bbb
+}
+
+.float-wa{
+position:fixed;right:18px;bottom:22px;z-index:90;
+background:#25d366;color:white;padding:13px 18px;
+border-radius:50px;font-weight:bold;box-shadow:0 4px 20px #0008
+}
+
+/* Fullscreen Photo Viewer */
+#viewer{
+display:none;position:fixed;inset:0;background:#000f;
+z-index:100;align-items:center;justify-content:center;
+flex-direction:column;padding:55px 12px 20px
+}
 #viewer.show{display:flex}
-#viewer img{max-width:100%;max-height:78vh;object-fit:contain;touch-action:pinch-zoom}
-#viewer h3{color:#edc78d;margin-top:10px;text-align:center}
-.close,.prev,.next{position:absolute;border:0;background:#d7a75f;color:#17130f;border-radius:50%;width:42px;height:42px;font-size:24px;font-weight:bold;cursor:pointer}
+#largePhoto{max-width:100%;max-height:78vh;object-fit:contain}
+#photoTitle{color:#edc78d;margin-top:12px;text-align:center}
+.close,.prev,.next{
+position:absolute;background:#edc78d;border:0;border-radius:50%;
+width:42px;height:42px;font-size:25px;cursor:pointer
+}
 .close{top:12px;right:15px}
 .prev{left:12px;top:50%}
 .next{right:12px;top:50%}
-.viewer-note{color:#ccc;font-size:12px;margin-top:7px}
+
 @media(max-width:600px){
- header{justify-content:center}
- nav{justify-content:center}
- .hero{padding:55px 5%}
- section{padding:42px 5%}
- .photo img{height:210px}
+header{justify-content:center}
+nav{justify-content:center}
+.hero{padding:55px 5%}
+section{padding:45px 5%}
+.photo img{height:220px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
- <div class="logo">RAHUL FURNITURE</div>
- <nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#work">Our Work</a>
-  <a href="#area">Service Area</a>
-  <a href="#contact">Contact</a>
- </nav>
+<div class="logo">RAHUL FURNITURE</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#work">Our Work</a>
+<a href="#ideas">Design Ideas</a>
+<a href="#area">Location</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <div class="hero" id="home">
- <h1>RAHUL FURNITURE</h1>
- <p>आपके घर के लिए आपकी पसंद और जरूरत के अनुसार कस्टम फर्नीचर। सुंदर डिजाइन, सही फिटिंग और आपकी पसंद का काम।</p>
- <a class="btn" href="tel:6378837457">CALL NOW</a>
- <a class="btn outline" href="https://wa.me/916378837457?text=Namaste%20Rahul%20Furniture%2C%20mujhe%20furniture%20banwana%20hai." target="_blank" rel="noopener">WhatsApp पर संपर्क करें</a>
+<h1>RAHUL FURNITURE</h1>
+<h2>Premium Custom Furniture | Jaipur</h2>
+<p>आपके घर के लिए शानदार डिजाइन, बेहतरीन फिटिंग और आपकी पसंद का कस्टम फर्नीचर।</p>
+
+<a class="btn call" href="tel:6378837457">☎ CALL NOW: 6378837457</a>
+
+<a class="btn whatsapp" href="https://wa.me/916378837457?text=Namaste%20Rahul%20Furniture"
+target="_blank" rel="noopener">WhatsApp: 6378837457</a>
 </div>
 
 <section id="services">
- <h2 class="section-title">Our Services</h2>
- <p class="sub">आपकी जरूरत के अनुसार फर्नीचर डिजाइन और फिटिंग</p>
- <div class="cards">
-  <div class="card"><h3>Almirah</h3><p>मॉडर्न और कस्टम अलमारी डिजाइन।</p></div>
-  <div class="card"><h3>Bed</h3><p>आपकी पसंद के अनुसार बेड और स्टोरेज।</p></div>
-  <div class="card"><h3>TV Panel</h3><p>सुंदर TV पैनल और TV यूनिट।</p></div>
-  <div class="card"><h3>Custom Furniture</h3><p>आपके घर की जगह के अनुसार फर्नीचर।</p></div>
-  <div class="card"><h3>Counter & Fitting</h3><p>काउंटर, फिटिंग और फर्नीचर का काम।</p></div>
-  <div class="card"><h3>Repair & Renovation</h3><p>फर्नीचर की मरम्मत और बदलाव।</p></div>
- </div>
+<h2 class="section-title">Our Services</h2>
+<p class="sub">Premium Furniture Design & Fitting</p>
+
+<div class="cards">
+<div class="card"><h3>Almirah</h3><p>Modern Designer Almirah & Wardrobe</p></div>
+<div class="card"><h3>Bed</h3><p>Premium Bed & Storage Design</p></div>
+<div class="card"><h3>TV Panel</h3><p>Luxury TV Unit & Marble Panel</p></div>
+<div class="card"><h3>Custom Furniture</h3><p>आपकी जगह के अनुसार डिजाइन</p></div>
+<div class="card"><h3>Counter & Fitting</h3><p>Counter, Fitting और Installation</p></div>
+<div class="card"><h3>Repair & Renovation</h3><p>Furniture Repair और Modification</p></div>
+</div>
 </section>
 
 <section id="work">
- <h2 class="section-title">Our Real Work</h2>
- <p class="sub">हमारे काम की तस्वीरें देखने के लिए किसी फोटो पर क्लिक करें।</p>
- <div class="gallery">
-  <div class="photo"><img src="IMG_20260112_211051.jpg" alt="Almirah work"><h3>Almirah Work</h3></div>
-  <div class="photo"><img src="IMG_20260112_222354.jpg" alt="Almirah project"><h3>Almirah Project</h3></div>
-  <div class="photo"><img src="IMG_20260128_144324.jpg" alt="TV panel work"><h3>TV Panel Work</h3></div>
-  <div class="photo"><img src="IMG_20260202_092404.jpg" alt="Furniture counter"><h3>Furniture Counter</h3></div>
-  <div class="photo"><img src="IMG_20261021_080129.jpg" alt="Bed work"><h3>Bed Work</h3></div>
-  <div class="photo"><img src="IMG_20261104_155357.jpg" alt="TV unit work"><h3>TV Unit Work</h3></div>
-  <div class="photo"><img src="IMG_20261104_155406.jpg" alt="Furniture work"><h3>Furniture Work</h3></div>
- </div>
+<h2 class="section-title">Our Real Work</h2>
+<p class="sub">हमारे वास्तविक काम की तस्वीरें</p>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="IMG_20260112_211051.jpg" alt="Almirah Work">
+<h3>Almirah Work</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20260112_222354.jpg" alt="Almirah Project">
+<h3>Almirah Project</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20260128_144324.jpg" alt="TV Panel Work">
+<h3>TV Panel Work</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20260202_092404.jpg" alt="Furniture Counter">
+<h3>Furniture Counter</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20261021_080129.jpg" alt="Bed Work">
+<h3>Bed Work</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20261104_155357.jpg" alt="TV Unit Work">
+<h3>TV Unit Work</h3>
+</div>
+
+<div class="photo">
+<img src="IMG_20261104_155406.jpg" alt="Furniture Work">
+<h3>Furniture Work</h3>
+</div>
+
+</div>
 </section>
 
 <section id="ideas">
- <h2 class="section-title">Design Ideas</h2>
- <p class="sub">इन डिजाइनों से अपनी पसंद का आइडिया चुनें।</p>
- <div class="gallery">
-  <div class="photo"><img src="new-tv-panel-marble.jpg" alt="Premium marble TV panel"><h3>Premium Marble TV Panel</h3></div>
-  <div class="photo"><img src="new-tv-unit-white.jpg" alt="Modern white TV unit"><h3>Modern White TV Unit</h3></div>
-  <div class="photo"><img src="new-almirah-cream-brown.jpg" alt="Cream brown designer almirah"><h3>Cream Brown Designer Almirah</h3></div>
- </div>
+<h2 class="section-title">Premium Design Ideas</h2>
+<p class="sub">आपकी पसंद के शानदार Furniture Designs</p>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="images.jpeg" alt="Furniture Design">
+<h3>Modern Furniture Design</h3>
+</div>
+
+<div class="photo">
+<img src="images (2).jpeg" alt="TV Furniture Design">
+<h3>Designer Furniture</h3>
+</div>
+
+<div class="photo">
+<img src="product-jpeg.jpg" alt="Premium Furniture">
+<h3>Premium Furniture</h3>
+</div>
+
+<div class="photo">
+<img src="wooden-bedroom-almirah.jpg" alt="Wooden Bedroom Almirah">
+<h3>Wooden Bedroom Almirah</h3>
+</div>
+
+<div class="photo">
+<img src="pflo_gal_AAA00004-HDR6.webp" alt="Furniture Inspiration">
+<h3>Furniture Inspiration</h3>
+</div>
+
+</div>
 </section>
 
 <section id="area">
- <h2 class="section-title">हमारा कार्यक्षेत्र</h2>
- <div class="area">
-  <h3>Jaipur, Rajasthan</h3>
-  <p>जगतपुरा, मालवीय नगर, मामा होटल क्षेत्र, झालाना और जयपुर के आसपास के इलाके।</p>
-  <p>नाप, डिजाइन और काम की जानकारी के लिए संपर्क करें।</p>
- </div>
+<h2 class="section-title">Our Service Locations</h2>
+
+<div class="area">
+<h3>📍 Jaipur, Rajasthan</h3>
+<p>Jagatpura • Malviya Nagar • Jhalana • Mama Hotel Area</p>
+<p>Serving Jaipur & Nearby Areas</p>
+<p>Premium Furniture Design, Manufacturing & Installation</p>
+
+<a class="btn outline"
+href="https://www.google.com/maps/search/?api=1&query=Jagatpura+Malviya+Nagar+Jhalana+Jaipur"
+target="_blank" rel="noopener">
+📍 VIEW SERVICE AREA ON MAP
+</a>
+</div>
 </section>
 
 <section id="contact" class="contact">
- <h2 class="section-title">अपना डिजाइन भेजें</h2>
- <p class="sub">आप जिस तरह का फर्नीचर बनवाना चाहते हैं, उसकी फोटो WhatsApp पर भेजें। हम आपकी जरूरत के अनुसार कस्टम रेट बताएँगे।</p>
- <a class="btn" href="https://wa.me/916378837457?text=Namaste%2C%20mujhe%20furniture%20banwana%20hai.%20Main%20design%20photo%20bhejunga." target="_blank" rel="noopener">DESIGN SEND ON WHATSAPP</a>
- <br>
- <a class="btn outline" href="tel:6378837457">CALL: 6378837457</a>
+<h2 class="section-title">Contact Rahul Furniture</h2>
+<p class="sub">अपना डिजाइन WhatsApp पर भेजें और कस्टम रेट जानें।</p>
+
+<a class="btn call" href="tel:6378837457">☎ CALL NOW: 6378837457</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/916378837457?text=Namaste%2C%20mujhe%20furniture%20banwana%20hai.%20Main%20design%20photo%20bhejunga."
+target="_blank" rel="noopener">
+WhatsApp: 6378837457
+</a>
 </section>
 
 <footer>
- <p>© 2026 Rahul Furniture | Jaipur, Rajasthan</p>
- <p>Custom Furniture • Almirah • Bed • TV Panel</p>
+<p>© 2026 Rahul Furniture | Jaipur Rajasthan</p>
+<p>Premium Almirah • Bed • TV Panel • Custom Furniture</p>
 </footer>
 
+<a class="float-wa"
+href="https://wa.me/916378837457?text=Namaste%20Rahul%20Furniture"
+target="_blank" rel="noopener">
+WhatsApp
+</a>
+
 <div id="viewer">
- <button class="close" id="closeViewer">×</button>
- <button class="prev" id="prevPhoto">‹</button>
- <img id="largePhoto" src="" alt="Enlarged furniture photo">
- <h3 id="photoTitle"></h3>
- <p class="viewer-note">फोटो को उँगलियों से बड़ा या छोटा कर सकते हैं।</p>
- <button class="next" id="nextPhoto">›</button>
+<button class="close" id="closeViewer">×</button>
+<button class="prev" id="prevPhoto">‹</button>
+<img id="largePhoto" src="" alt="Furniture">
+<h3 id="photoTitle"></h3>
+<button class="next" id="nextPhoto">›</button>
 </div>
 
 <script>
-const photos=Array.from(document.querySelectorAll(".gallery .photo"));
+const photos=[...document.querySelectorAll(".gallery .photo")];
 const viewer=document.getElementById("viewer");
 const largePhoto=document.getElementById("largePhoto");
 const photoTitle=document.getElementById("photoTitle");
 let current=0;
 
 function showPhoto(index){
- current=(index+photos.length)%photos.length;
- const img=photos[current].querySelector("img");
- largePhoto.src=img.src;
- largePhoto.alt=img.alt;
- photoTitle.textContent=photos[current].querySelector("h3").textContent;
- viewer.classList.add("show");
- document.body.style.overflow="hidden";
+current=(index+photos.length)%photos.length;
+const img=photos[current].querySelector("img");
+largePhoto.src=img.src;
+largePhoto.alt=img.alt;
+photoTitle.textContent=photos[current].querySelector("h3").textContent;
+viewer.classList.add("show");
+document.body.style.overflow="hidden";
 }
+
 function closePhoto(){
- viewer.classList.remove("show");
- document.body.style.overflow="";
- largePhoto.src="";
+viewer.classList.remove("show");
+document.body.style.overflow="";
+largePhoto.src="";
 }
+
 photos.forEach((photo,index)=>{
- photo.addEventListener("click",()=>showPhoto(index));
+photo.addEventListener("click",()=>showPhoto(index));
 });
+
 document.getElementById("closeViewer").addEventListener("click",closePhoto);
 document.getElementById("prevPhoto").addEventListener("click",()=>showPhoto(current-1));
 document.getElementById("nextPhoto").addEventListener("click",()=>showPhoto(current+1));
+
 viewer.addEventListener("click",e=>{
- if(e.target===viewer)closePhoto();
+if(e.target===viewer)closePhoto();
 });
+
 document.addEventListener("keydown",e=>{
- if(!viewer.classList.contains("show"))return;
- if(e.key==="Escape")closePhoto();
- if(e.key==="ArrowLeft")showPhoto(current-1);
- if(e.key==="ArrowRight")showPhoto(current+1);
+if(!viewer.classList.contains("show"))return;
+if(e.key==="Escape")closePhoto();
+if(e.key==="ArrowLeft")showPhoto(current-1);
+if(e.key==="ArrowRight")showPhoto(current+1);
 });
 </script>
+
 </body>
 </html>
